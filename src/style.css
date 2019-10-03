@@ -1,0 +1,90 @@
+.logo{
+    width: 300px;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+.red{
+    margin-left: 430px;
+    margin-top: -180px;
+    font-size: 70px;
+}
+.subtitulo{
+    margin-left: 460px;
+    margin-top: -30px;
+}
+.informacion{
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 20px;
+    line-height: 25px;
+}
+.ingreso{
+    margin-top: 60px;
+    margin-left: 580px;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+}
+.loguito{
+    width: 250px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 150px; 
+}
+.subtitulo1{
+    margin-left: 400px;
+    margin-top: -120px;
+    font-size: 40px;
+}
+footer{
+    margin-top: 70px;
+    margin-left: 500px;
+}
+.pantallacifra{
+    margin-left: 380px;
+    margin-top: 70px;
+}
+.tex{
+    margin-left: 450px;
+}
+.t1{
+    border: 2px solid palevioletred;  
+}
+.t2{
+    margin-top: 50px;
+    border: 2px solid palevioletred;
+}
+.botones1{
+    margin-top: -120px;
+    margin-left: 530px;
+}
+.b1{
+    margin-top: 10px;
+    margin-right: 120px;
+    margin-left: 140px;
+    padding: 5px 20px;
+    font-size: 15px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+}
+.b2{
+    padding: 5px 20px;
+    font-size: 15px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+}
+.b3{
+    padding: 5px 20px;
+    font-size: 15px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+    margin-left: 230px;
+    margin-top: 10px;
+}

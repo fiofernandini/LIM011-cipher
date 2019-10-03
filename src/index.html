@@ -1,15 +1,57 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cifrado Cesar</title>
+<!--LINKEO DEL CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--SE PONE UNA IMAGEN Y EL NOMBRE DE LA INSTITUCIONA USAR EL CIFRADO-->
+    <header id="cabecera">
+            <img class="logo" src="com.jpg">
+            <h1 class="red">Las comadres</h1>
+            <h2 class="subtitulo">Red de acompañamiento en aborto</h2>  
+    </header>
+
+<main>
+<!--EN UN PARRAFO SE PONE INFORMACION SOBRE LA RED DE AYUDA -->
+    <div id="pantalla1">
+         <p class="informacion">En Ecuador cada vez son más las mujeres criminalizadas y con restricciones para acceder a un aborto seguro.
+            Nuestro trabajo permite que la práctica del aborto salga de la clandestinidad y se muestre como cotidiana.</p>
+  <!--SE CREA UN BOTON PARA INGRESAR Y NOS LLEVE A LA PANTALLA DEL CIFRADO-->
+        <input id="botonIngresar" class="ingreso" type="button" value="Ingresar">
+     </div>
+<!--EN UN DIV SE ENCIERRA TODO EL CONTENIDO DE LA PANTALLA DE CIFRADO QUE ESTA OCULTA, PARA SER LLAMADA POR 
+A MOSTRARSE CON ADDEVENTLISTENER EN JS-->
+<div id="segundaPantalla" style="display:none">
+    <img class="loguito" src="com.jpg">
+    <p class="subtitulo1">Sistema de protección de datos</p>
+</div>
+<!--AQUI SE COLOCARA EL NUMERO DE DESPLAZAMIENTOS PARA EJERCER EL CIFRADO-->
+<div  class="pantallacifra" id="pantallacifrar" style="display: none">
+    <form>
+        <p  class="desplazamiento"> Desplazamientos: <input id="desplaza" type="number"></p>
+<!--AQUI SE INGRESARÁ EL MENSAJE A CIFRAR-->
+        <textarea id="mensajito" class="t1"  cols="80" rows="5" placeholder="Escribe tu mensaje"></textarea> <br>
+<!--ESTOS SON LOS BOTONES DE CIFRAR Y DESCIFRAR-->      
+        <button id="boton1" class="b1" type="button"> Cifrar </button>
+        <button class="b2" type="button">  Descifrar </button> <br>
+<!--AQUI SE MOSTRARÁ EL RESULTADO DEL MENSAJE CIFRADO O DESCIFRADO-->
+        <textarea id="textarea2" class="t2"  id="resultado" cols="80" rows="5" disabled></textarea> <br>
+<!--BOTON PARA RESETEAR EL CONTENIDO DEL FORM-->
+        <button class="b3" type="reset">Borrar</button>
+    </form>
+
+</div>
+
+</main>
+<!--ESTE ES UN PIE DE PAGINA -->
+    <footer id="derechos">Fiorella Fernandini © Derechos reservados</footer>
+<!-- LINKEO DE LOS ARCHIVOS JS-->
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
 </html>
