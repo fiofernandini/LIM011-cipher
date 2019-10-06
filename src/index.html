@@ -7,6 +7,7 @@
     <title>Cifrado Cesar</title>
 <!--LINKEO DEL CSS-->
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="signo.ico">
 </head>
 <body>
 <!--SE PONE UNA IMAGEN Y EL NOMBRE DE LA INSTITUCIONA USAR EL CIFRADO-->
@@ -26,23 +27,24 @@
      </div>
 <!--EN UN DIV SE ENCIERRA TODO EL CONTENIDO DE LA PANTALLA DE CIFRADO QUE ESTA OCULTA, PARA SER LLAMADA POR 
 A MOSTRARSE CON ADDEVENTLISTENER EN JS-->
-<div id="segundaPantalla" style="display:none">
+
+<div id="segundaPantalla">
     <img class="loguito" src="com.jpg">
     <p class="subtitulo1">Sistema de protección de datos</p>
 </div>
 <!--AQUI SE COLOCARA EL NUMERO DE DESPLAZAMIENTOS PARA EJERCER EL CIFRADO-->
-<div  class="pantallacifra" id="pantallacifrar" style="display: none">
-    <form>
-        <p  class="desplazamiento"> Desplazamientos: <input id="desplaza" type="number"></p>
+<div  class="pantallacifra" id="pantallacifrar">
+    <form id="formulario">
+        <p  class="desplazamiento"> Desplazamientos: <input class="numerito" id="desplaza" type="number"></p>
 <!--AQUI SE INGRESARÁ EL MENSAJE A CIFRAR-->
         <textarea id="mensajito" class="t1"  cols="80" rows="5" placeholder="Escribe tu mensaje"></textarea> <br>
 <!--ESTOS SON LOS BOTONES DE CIFRAR Y DESCIFRAR-->      
         <button id="boton1" class="b1" type="button"> Cifrar </button>
-        <button class="b2" type="button">  Descifrar </button> <br>
+        <button id="boton2" class="b2" type="button">  Descifrar </button> <br>
 <!--AQUI SE MOSTRARÁ EL RESULTADO DEL MENSAJE CIFRADO O DESCIFRADO-->
         <textarea id="textarea2" class="t2"  id="resultado" cols="80" rows="5" disabled></textarea> <br>
 <!--BOTON PARA RESETEAR EL CONTENIDO DEL FORM-->
-        <button class="b3" type="reset">Borrar</button>
+        <input id="borrar" class="b3" type="reset" value="reset">       
     </form>
 
 </div>
