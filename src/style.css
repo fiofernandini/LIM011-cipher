@@ -1,5 +1,5 @@
 body{
-    background-color: #F4EADE;
+    background-color: white;
 }
 .logo{
     width: 300px;
@@ -16,10 +16,10 @@ body{
 .subtitulo{
     margin-left: 460px;
     margin-top: -30px;
-    color: rgb(14, 142, 151);
+    color:#0E9897;
 }
 .informacion{
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 300px;
     margin-right: 300px;
     font-size: 20px;
@@ -27,16 +27,16 @@ body{
     color: rgb(15, 15, 15)
 }
 .ingreso{
-    margin-top: 60px;
-    margin-left: 580px;
-    padding: 10px 30px;
+    margin-top: 20px;
+    margin-left: 610px;
+    padding: 5px 20px;
     font-size: 20px;
     background-color: palevioletred;
     color: #F4EADE;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .ingreso:hover {
-    background-color:rgb(14, 142, 151);
+    background-color:#0E9897;
 }
 .loguito{
     width: 230px;
@@ -53,7 +53,7 @@ body{
 }
 footer{
     margin-top: 70px;
-    margin-left: 500px;
+    margin-left: 530px;
 }
 .pantallacifra{
     margin-left: 380px;
@@ -84,7 +84,7 @@ footer{
     border-radius: 5px;
 }
 .b1:hover{
-    background-color:rgb(14, 142, 151);
+    background-color:#0E9897;
 }
 .b2{
     padding: 5px 20px;
@@ -94,7 +94,7 @@ footer{
     border-radius: 5px;
 }
 .b2:hover{
-    background-color:rgb(14, 142, 151);  
+    background-color:#0E9897;  
 }
 .b3{
     padding: 5px 20px;
@@ -106,7 +106,7 @@ footer{
     margin-top: 10px;
 }
 .b3:hover{
-    background-color:rgb(14, 142, 151);
+    background-color:#0E9897;
 }
 .numerito{
     width: 40px;
@@ -114,7 +114,7 @@ footer{
     border: 2px solid palevioletred;
 }
 .desplazamiento{
-    color:  rgb(14, 142, 151);
+    color:  #0E9897;
     font-size: 20px;
 }
 .ocultar{
@@ -124,5 +124,27 @@ footer{
     display: block;
 }
 textarea{
-    resize: none
+    resize: none;
+}
+.ingresa{
+    margin-top: 60px;
+    margin-left: 500px;
+}
+.sesion1{
+    margin-left: 30px;
+    border-radius: 2px;
+    border: 2px solid #0E9897;
+}
+.sesion2{
+    border-radius: 2px;
+    border: 2px solid #0E9897;
+}
+#cabecera{
+    margin-top: -20px;
+    margin-left: 30px;
+}
+.letra{
+    color:#2F496E;
+    font-weight: bold; 
+    font-size: 20px;
 }

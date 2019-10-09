@@ -1,4 +1,32 @@
-# Cifrado César
+#  Proyecto Cifrado Cesar
+
+Este proyecto busca encriptar o desencriptar información, de acuerdo a un numero de desplazamientos solicitado por el usuario.
+
+imagen de pantalla 1
+imagen de pantalla 2
+
+## Investigación UX
+
+En Ecuador cada vez son más las mujeres criminalizadas y con restricciones para acceder a un aborto seguro. Por esto nace Las Comadres, una red de acompañamiento, que brinda ayuda y asesoramiento a mujeres que deciden abortar.
+Esta red se enfoca en 3 acciones
+
+**INFORMAR**  a las mujeres sobre aborto seguro con pastillas y estrategias para evitar la criminalización.
+
+**FACILITAR**  a las mujeres el contacto con organizaciones internacionales que trabajan por el acceso a los medicamentos.
+
+**ACOMPAÑAR**  a las mujeres durante todo el proceso de aborto: antes, durante y después; como una estrategia de despenalización social y prevención de la criminalización de mujeres que abortan.
+
+Debido a que el aborto es criminalizado en Ecuador, esta red debe  mantener segura la información de las mujeres que deciden recibir ayuda por parte de Las comadres, El producto ayuda a que el proceso de seguridad de información se lleve a cabo con éxito, las únicas personas que podrán acceder al producto es el personal de la red Las Comadres quienes contaran con un Username y Password.
+
+primer prototipo en papel
+
+El feedback recibido por parte de las Coach fue que había que poner en la primera pantalla información mas relevante sobre el porqué los usuarios requieren usar la pagina de protección de información.
+El feedback recibido por el Squad fue que sería mas agradable y adecuado contar con un inicio de sesión ya que eso tendría concordancia con lo que se espera de la pagina: SEGURIDAD
+
+imagen prototipo figma
+
+
+# Proyecto Cifrado César
 
 ## Índice
 

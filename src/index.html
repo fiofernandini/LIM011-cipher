@@ -18,14 +18,20 @@
     </header>
 
 <main>
-<!--EN UN PARRAFO SE PONE INFORMACION SOBRE LA RED DE AYUDA -->
+<!-- EN UN PARRAFO SE PONE INFORMACION SOBRE LA RED DE AYUDA -->
     <div id="pantalla1">
          <p class="informacion">En Ecuador cada vez son más las mujeres criminalizadas y con restricciones para acceder a un aborto seguro.
             Nuestro trabajo permite que la práctica del aborto salga de la clandestinidad y se muestre como cotidiana.</p>
-  <!--SE CREA UN BOTON PARA INGRESAR Y NOS LLEVE A LA PANTALLA DEL CIFRADO-->
-        <input id="botonIngresar" class="ingreso" type="button" value="Ingresar">
+<!-- SE CREA UN FORMULARIO DE INICIO DE SESION-->
+<form class="ingresa">
+<p class="letra">Usuario <input id="user" class="sesion1" type="text" placeholder="Username"> </p>
+<p class="letra">Contraseña <input id="contra" class="sesion2" type="password" placeholder="Password"></p>
+</form>
+  <!-- SE CREA UN BOTON PARA INGRESAR Y NOS LLEVE A LA PANTALLA DEL CIFRADO-->
+        <input id="botonIngresar" class="ingreso" type="submit" value="Ingresar">
+
      </div>
-<!--EN UN DIV SE ENCIERRA TODO EL CONTENIDO DE LA PANTALLA DE CIFRADO QUE ESTA OCULTA, PARA SER LLAMADA POR 
+<!-- EN UN DIV SE ENCIERRA TODO EL CONTENIDO DE LA PANTALLA DE CIFRADO QUE ESTA OCULTA, PARA SER LLAMADA POR 
 A MOSTRARSE CON ADDEVENTLISTENER EN JS-->
 
 <div id="segundaPantalla">
@@ -44,9 +50,9 @@ A MOSTRARSE CON ADDEVENTLISTENER EN JS-->
 <!--AQUI SE MOSTRARÁ EL RESULTADO DEL MENSAJE CIFRADO O DESCIFRADO-->
         <textarea id="textarea2" class="t2"  id="resultado" cols="80" rows="5" disabled></textarea> <br>
 <!--BOTON PARA RESETEAR EL CONTENIDO DEL FORM-->
-        <input id="borrar" class="b3" type="reset" value="reset">       
+        <button id="borrar" class="b3" type="reset"> Reset </button> 
     </form>
-
+      
 </div>
 
 </main>

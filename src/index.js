@@ -1,38 +1,49 @@
-document.getElementById('segundaPantalla').classList.add('ocultar');
-document.getElementById('pantallacifrar').classList.add('ocultar');
+document.getElementById('segundaPantalla').classList.add('ocultar')
+document.getElementById('pantallacifrar').classList.add('ocultar')
 
-document.getElementById('botonIngresar').addEventListener('click', function(){
-    document.getElementById('cabecera').classList.add('ocultar');
-    document.getElementById('pantalla1').classList.add('ocultar');
-    document.getElementById('derechos').classList.add('ocultar');
-    document.getElementById('segundaPantalla').classList.add('mostrar');
-    document.getElementById('pantallacifrar').classList.add('mostrar');
-    
-});
+document.getElementById('botonIngresar').addEventListener('click', function () {
+  const usuarito = document.getElementById('user').value
+  const contraseñita = document.getElementById('contra').value
+  if (contraseñita === 'COMADRES' && usuarito === '') {
+    alert('DEBES INGRESAR TU USUARIO')
+  } else if (contraseñita === 'COMADRES') {
+    document.getElementById('cabecera').classList.add('ocultar')
+    document.getElementById('pantalla1').classList.add('ocultar')
+    document.getElementById('derechos').classList.add('ocultar')
+    document.getElementById('segundaPantalla').classList.add('mostrar')
+    document.getElementById('pantallacifrar').classList.add('mostrar')
+  } else if (usuarito === '') {
+    alert('DEBES INGRESAR TU USUARIO')
+  } else if (contraseñita === '') {
+    alert('DEBES INGRESAR TU CONTRASEÑA')
+  } else {
+    alert('CONTRASEÑA INCORRECTA')
+  }
+})
 
- 
-let mensaje = document.getElementById('mensajito');
-let desplaza = document.getElementById('desplaza');
-let resultado = document.getElementById('textarea2');
+const mensaje = document.getElementById('mensajito')
+const desplaza = document.getElementById('desplaza')
+const resultado = document.getElementById('textarea2')
 
-//CIFRAR
-document.getElementById('boton1').addEventListener('click', function(){
-    //SE TOMA EL CONTENIDO DEL MENSAJE
-    let string = mensaje.value;
-    //SE TOMA EL CONTENIDO DE LOS DESPLAZAMIENTOS, CON parseInt SE ASEGURA QUE SEAN NUMEROS Y ENTEROS
-    let offset = parseInt(desplaza.value);
-    
-    resultado.innerHTML = cipher.encode(string, offset); });
+// CIFRAR
+document.getElementById('boton1').addEventListener('click', function () {
+  // SE TOMA EL CONTENIDO DEL MENSAJE
+  const string = mensaje.value
+  // SE TOMA EL CONTENIDO DE LOS DESPLAZAMIENTOS, CON parseInt SE ASEGURA QUE SEAN NUMEROS Y ENTEROS
+  const offset = parseInt(desplaza.value)
+  resultado.innerHTML = window.cipher.encode(string, offset)
+})
 
+// DESCIFRAR
+document.getElementById('boton2').addEventListener('click', function () {
+  // SE TOMA EL CONTENIDO DEL MENSAJE
+  const string = mensaje.value
+  // SE TOMA EL CONTENIDO DE LOS DESPLAZAMIENTOS, CON parseInt SE ASEGURA QUE SEAN NUMEROS Y ENTEROS
+  const offset = parseInt(desplaza.value)
+  resultado.innerHTML = window.cipher.decode(string, offset)
+})
 
-
-
-
-
-
-
-
-/*//MI PRIMER MODELO SOLO EN UN JS
+/* //MI PRIMER MODELO SOLO EN UN JS
 document.getElementById('boton1').addEventListener('click', function(){
     //SE TOMA EL CONTENIDO DEL MENSAJE
     let string = mensaje.value;
@@ -54,9 +65,6 @@ document.getElementById('boton1').addEventListener('click', function(){
     resultado.innerHTML += String.fromCharCode(ascii);
      }
       }
-        }         
+        }
          })
 */
-         
-
-
