@@ -2,7 +2,7 @@
 
 Este proyecto busca encriptar o desencriptar información, de acuerdo a un numero de desplazamientos solicitado por el usuario.
 
-imagen de pantalla 1
+![alt text](https://github.com/fiofernandini/LIM011-cipher/blob/master/src/imagenes/primerapantalla.jpg)
 imagen de pantalla 2
 
 ## Investigación UX
