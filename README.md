@@ -2,8 +2,8 @@
 
 Este proyecto busca encriptar o desencriptar información, de acuerdo a un numero de desplazamientos solicitado por el usuario.
 
-imagen de pantalla 1
-imagen de pantalla 2
+![](C:\Users\Fiorella\Documents\LABORATORIA\Cesar\LIM011-cipher\src\imagenes\primerapantalla.jpg)
+
 
 ## Investigación UX
 
