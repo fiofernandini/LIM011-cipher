@@ -26,12 +26,11 @@ El feedback recibido por el Squad fue que sería mas agradable y adecuado contar
 imagen prototipo figma
 
 
-# Proyecto Cifrado César
 
-=======
+
+
 # Cifrado César
  
->>>>>>> 69cc8d2cdee095718ea3102adeb08d097b42ef26
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
