@@ -2,7 +2,9 @@
 
 Este proyecto busca encriptar o desencriptar información, de acuerdo a un numero de desplazamientos solicitado por el usuario.
 
-![](C:\Users\Fiorella\Documents\LABORATORIA\Cesar\LIM011-cipher\src\imagenes\primerapantalla.jpg)
+![](https://github.com/fiofernandini/LIM011-cipher/blob/master/src/imagenes/primerapantalla.jpg)
+
+![](https://github.com/fiofernandini/LIM011-cipher/blob/master/src/imagenes/segundapantalla.jpg)
 
 
 ## Investigación UX
@@ -18,7 +20,9 @@ Esta red se enfoca en 3 acciones
 
 Debido a que el aborto es criminalizado en Ecuador, esta red debe  mantener segura la información de las mujeres que deciden recibir ayuda por parte de Las comadres, El producto ayuda a que el proceso de seguridad de información se lleve a cabo con éxito, las únicas personas que podrán acceder al producto es el personal de la red Las Comadres quienes contaran con un Username y Password.
 
-prototipo papel imagen
+![](https://github.com/fiofernandini/LIM011-cipher/blob/master/src/imagenes/Imagen%20de%20iOS%20(1).jpg)
+
+![](https://github.com/fiofernandini/LIM011-cipher/blob/master/src/imagenes/Imagen%20de%20iOS.jpg)
 
 El feedback recibido por parte de las Coach fue que había que poner en la primera pantalla información mas relevante sobre el porqué los usuarios requieren usar la pagina de protección de información.
 El feedback recibido por el Squad fue que sería mas agradable y adecuado contar con un inicio de sesión ya que eso tendría concordancia con lo que se espera de la pagina: SEGURIDAD
