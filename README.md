@@ -3,7 +3,9 @@
 Este proyecto busca encriptar o desencriptar información, de acuerdo a un numero de desplazamientos solicitado por el usuario.
 
 ![alt text](https://github.com/fiofernandini/LIM011-cipher/blob/master/src/imagenes/primerapantalla.jpg)
-imagen de pantalla 2
+
+![](https://github.com/fiofernandini/LIM011-cipher/blob/master/src/imagenes/segundapantalla.jpg)
+
 
 ## Investigación UX
 
@@ -26,9 +28,7 @@ El feedback recibido por el Squad fue que sería mas agradable y adecuado contar
 imagen prototipo figma
 
 
-# Proyecto Cifrado César
 
-=======
 # Cifrado César
  
 >>>>>>> 69cc8d2cdee095718ea3102adeb08d097b42ef26
