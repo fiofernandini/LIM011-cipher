@@ -4,14 +4,15 @@ document.getElementById('pantallacifrar').classList.add('ocultar')
 document.getElementById('botonIngresar').addEventListener('click', function () {
   const usuarito = document.getElementById('user').value
   const contraseñita = document.getElementById('contra').value
-  if (contraseñita === 'COMADRES' && usuarito === '') {
+  if (contraseñita === 'C' && usuarito === '') {
     alert('DEBES INGRESAR TU USUARIO')
-  } else if (contraseñita === 'COMADRES') {
-    document.getElementById('cabecera').classList.add('ocultar')
-    document.getElementById('pantalla1').classList.add('ocultar')
-    document.getElementById('derechos').classList.add('ocultar')
-    document.getElementById('segundaPantalla').classList.add('mostrar')
-    document.getElementById('pantallacifrar').classList.add('mostrar')
+  } else if (contraseñita === 'C') {
+    document.getElementById('cabecera').style.display = 'none'
+    document.getElementById('pantalla1').style.display = 'none'
+    document.getElementById('derechos').style.display = 'none'
+    document.getElementById('segundaPantalla').style.display = 'block'
+    document.getElementById('pantallacifrar').style.display = 'block'
+    document.getElementById('formulario').reset()
   } else if (usuarito === '') {
     alert('DEBES INGRESAR TU USUARIO')
   } else if (contraseñita === '') {
@@ -20,6 +21,18 @@ document.getElementById('botonIngresar').addEventListener('click', function () {
     alert('CONTRASEÑA INCORRECTA')
   }
 })
+
+// CERRAR SESION
+document.getElementById('salir').addEventListener('click', function () {
+  document.getElementById('cabecera').style.display = 'block'
+  document.getElementById('pantalla1').style.display = 'block'
+  document.getElementById('derechos').style.display = 'block'
+  document.getElementById('segundaPantalla').style.display = 'none'
+  document.getElementById('pantallacifrar').style.display = 'none'
+  document.getElementById('ingresando').reset()
+})
+
+// VARIABLES
 
 const mensaje = document.getElementById('mensajito')
 const desplaza = document.getElementById('desplaza')

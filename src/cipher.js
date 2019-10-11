@@ -16,6 +16,7 @@ window.cipher = {
         const ascii = (string.charCodeAt(i) - 97 + offset) % 26 + 97
         // SE INSERTA EN LA VARIABLE VACIA EL NUEVO ASCII CONVERTIDO A LETRA
         mensajecifrado += String.fromCharCode(ascii)
+        // LOS DEMAS CARACTERES SALDRAN IGUAL SIN CIFRADO
       } else {
         mensajecifrado += string[i]
       }
@@ -34,6 +35,7 @@ window.cipher = {
       } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
         const ascii = (string.charCodeAt(i) - 122 - offset) % 26 + 122
         mensajeDescifrado += String.fromCharCode(ascii)
+      // DEMAS CARACTERES SIN CIFRADO
       } else {
         mensajeDescifrado += string[i]
       }
