@@ -4,9 +4,9 @@ document.getElementById('pantallacifrar').classList.add('ocultar')
 document.getElementById('botonIngresar').addEventListener('click', function () {
   const usuarito = document.getElementById('user').value
   const contraseñita = document.getElementById('contra').value
-  if (contraseñita === 'C' && usuarito === '') {
+  if (contraseñita === 'COMADRES' && usuarito === '') {
     alert('DEBES INGRESAR TU USUARIO')
-  } else if (contraseñita === 'C') {
+  } else if (contraseñita === 'COMADRES') {
     document.getElementById('cabecera').style.display = 'none'
     document.getElementById('pantalla1').style.display = 'none'
     document.getElementById('derechos').style.display = 'none'
