@@ -28,9 +28,9 @@
             Nuestro trabajo permite que la práctica del aborto salga de la clandestinidad y se muestre como cotidiana.</p>
 <!-- SE CREA UN FORMULARIO DE INICIO DE SESION-->
 <form class="ingresa" id="ingresando">
-<label class="letra"> Usuario <input id="user" class="sesion1" type="text" placeholder="Username"> </label> <br>
+<label class="letra"> Usuario <input id="user" class="sesion1" required type="text" placeholder="Username"> </label> <br>
 <br>
-<label class="letra">Contraseña <input id="contra" class="sesion2" type="password" placeholder="Password"></label>
+<label class="letra">Contraseña <input id="contra" class="sesion2" required type="password" placeholder="Password"></label>
 </form>
   <!-- SE CREA UN BOTON PARA INGRESAR Y NOS LLEVE A LA PANTALLA DEL CIFRADO-->
         <input id="botonIngresar" class="ingreso" type="submit" value="Ingresar">
@@ -47,7 +47,7 @@ A MOSTRARSE CON ADDEVENTLISTENER EN JS-->
 <!--AQUI SE COLOCARA EL NUMERO DE DESPLAZAMIENTOS PARA EJERCER EL CIFRADO-->
 <div  class="pantallacifra" id="pantallacifrar">
     <form id="formulario">
-        <p  class="desplazamiento"> Desplazamientos: <input class="numerito" id="desplaza" type="number"></p>
+        <p  class="desplazamiento"> Desplazamientos: <input class="numerito" id="desplaza" type="number" min="1"> </p>
 <!--AQUI SE INGRESARÁ EL MENSAJE A CIFRAR-->
         <textarea id="mensajito" class="t1"  cols="80" rows="5" placeholder="Escribe tu mensaje"></textarea> <br>
 <!--ESTOS SON LOS BOTONES DE CIFRAR Y DESCIFRAR-->      
