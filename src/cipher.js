@@ -3,7 +3,7 @@ window.cipher = {
     // SE CREA UNA VARIABLE VACIA
     let mensajecifrado = ''
     // CON FOR HACEMOS UN RECORRIDO POR TODO EL STRING
-    for (let i = 0; i < string.length; i++) {
+    for (let i = 0; i < string.length; i += 1) {
       // CONDICION PARA EL CIFRADO DE MAYUSCULAS
       if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
       // SE APLICA LA FORMULA PARA OBTENER EL NUEVO ASCII
@@ -26,7 +26,7 @@ window.cipher = {
 
   decode: (string, offset) => {
     let mensajeDescifrado = ''
-    for (let i = 0; i < string.length; i++) {
+    for (let i = 0; i < string.length; i += 1) {
       // MAYUSCULAS
       if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
         const ascii = (string.charCodeAt(i) - 90 - offset) % 26 + 90

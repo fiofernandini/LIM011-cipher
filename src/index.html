@@ -13,59 +13,50 @@
     <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<!--SE PONE UNA IMAGEN Y EL NOMBRE DE LA INSTITUCIONA USAR EL CIFRADO-->
+<!--SE PONE UNA IMAGEN Y EL NOMBRE DE LA INSTITUCION A USAR EL CIFRADO-->
     <header id="cabecera">
-            <img class="logo" src="com.png">
-            <h1 class="red">Las comadres</h1>
-            <h2 class="subtitulo">Red de acompañamiento en aborto</h2>  
+        <img class="logo" src="com.png">
+        <h1 class="red">Las comadres</h1>
+        <h2 class="subtitulo">Red de acompañamiento en aborto</h2>  
     </header>
 
 <main>
-<!-- EN UN PARRAFO SE PONE INFORMACION SOBRE LA RED DE AYUDA -->
-    <div id="pantalla1">
-         <p class="informacion">En Ecuador cada vez son más las mujeres criminalizadas y con restricciones para acceder a un aborto seguro.
-            Nuestro trabajo permite que la práctica del aborto salga de la clandestinidad y se muestre como cotidiana.</p>
-<!-- SE CREA UN FORMULARIO DE INICIO DE SESION-->
-<form class="ingresa" id="ingresando">
-<label class="letra"> Usuario <input id="user" class="sesion1" required type="text" placeholder="Username"> </label> <br>
-<br>
-<label class="letra">Contraseña <input id="contra" class="sesion2" required type="password" placeholder="Password"></label>
-</form>
-  <!-- SE CREA UN BOTON PARA INGRESAR Y NOS LLEVE A LA PANTALLA DEL CIFRADO-->
-        <input id="botonIngresar" class="ingreso" type="submit" value="Ingresar">
+<!-- INICIO DE SESION-->
+<div id="pantalla1">
+    <p class="informacion">En Ecuador cada vez son más las mujeres criminalizadas y con restricciones para acceder a un aborto seguro.
+    Nuestro trabajo permite que la práctica del aborto salga de la clandestinidad y se muestre como cotidiana.</p>
+    <form class="ingresa" id="ingresando">
+        <label class="letra"> Usuario <input id="user" class="sesion1" required type="text" placeholder="Username"> </label> <br>
+        <br>
+        <label class="letra">Contraseña <input id="contra" class="sesion2" required type="password" placeholder="Password"></label> <br>
+        <p id="emergente" class="emerge"><br></p>
+    </form>
+    <input id="botonIngresar" class="ingreso" type="submit" value="Ingresar">
+</div>
 
-     </div>
-
-<!-- EN UN DIV SE ENCIERRA TODO EL CONTENIDO DE LA PANTALLA DE CIFRADO QUE ESTA OCULTA, PARA SER LLAMADA POR 
-A MOSTRARSE CON ADDEVENTLISTENER EN JS-->
-
+<!-- PANTALLA DE CIFRADO Y DESCIFRADO-->
 <div id="segundaPantalla">  
     <img class="loguito" src="com.png">
     <p class="subtitulo1">Sistema de protección de datos</p>
 </div>
-<!--AQUI SE COLOCARA EL NUMERO DE DESPLAZAMIENTOS PARA EJERCER EL CIFRADO-->
+
 <div  class="pantallacifra" id="pantallacifrar">
     <form id="formulario">
         <p  class="desplazamiento"> Desplazamientos: <input class="numerito" id="desplaza" type="number" min="1"> </p>
-<!--AQUI SE INGRESARÁ EL MENSAJE A CIFRAR-->
         <textarea id="mensajito" class="t1"  cols="80" rows="5" placeholder="Escribe tu mensaje"></textarea> <br>
-<!--ESTOS SON LOS BOTONES DE CIFRAR Y DESCIFRAR-->      
         <button id="boton1" class="b1" type="button"> Cifrar </button>
         <button id="boton2" class="b2" type="button">  Descifrar </button> <br>
-<!--AQUI SE MOSTRARÁ EL RESULTADO DEL MENSAJE CIFRADO O DESCIFRADO-->
         <textarea id="textarea2" class="t2"  id="resultado" cols="80" rows="5" disabled></textarea> <br>
- <!--BOTON PARA RESETEAR EL CONTENIDO DEL FORM-->
- <button id="borrar" class="b3" type="reset"> Reset </button>
+        <button id="borrar" class="b3" type="reset"> Reset </button>
     </form>
-<!-- BOTON PARA CERRAR SESION -->
-<button id="salir" class="b4" type="button" > Salir </button> 
+    <button id="salir" class="b4" type="button" > Salir </button> 
 </div>
-
 </main>
-<!--ESTE ES UN PIE DE PAGINA -->
-    <footer id="derechos">Fiorella Fernandini © Derechos reservados</footer>
-<!-- LINKEO DE LOS ARCHIVOS JS-->
+     <footer id="derechos">Fiorella Fernandini © Derechos reservados</footer>
+
+ <!--LINKEO DE LOS ARCHIVOS JS-->
     <script src="cipher.js"></script>
     <script src="index.js"></script>
 </body>
