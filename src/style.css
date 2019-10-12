@@ -25,7 +25,7 @@ body{
 }
 .informacion{
     font-family: 'Merriweather Sans', sans-serif;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-left: 300px;
     margin-right: 300px;
     font-size: 17px;
@@ -47,25 +47,25 @@ body{
 .loguito{
     width: 265px;
     height: 210px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 120px; 
 }
 .subtitulo1{
     font-family: 'Philosopher', sans-serif;
     margin-left: 380px;
-    margin-top: -132px;
+    margin-top: -140px;
     font-size: 40px;
     color: #2F496E;
     font-weight: bold;
 }
 footer{
     font-family: 'Philosopher', sans-serif;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 510px;
 }
 .pantallacifra{
     margin-left: 380px;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 .tex{
     margin-left: 450px;
@@ -121,7 +121,7 @@ footer{
     font-size: 20px;
     color: #F4EADE;
     margin-left: 850px;
-    margin-top: 40px;
+    margin-top: 25px;
     border-radius: 5px;
     background-color:#0E9897;
 }
@@ -143,7 +143,7 @@ textarea{
     resize: none;
 }
 .ingresa{
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 500px;
 }
 .sesion1{
