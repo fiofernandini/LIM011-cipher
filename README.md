@@ -51,7 +51,7 @@ A continuación te presentamos los objetivos de aprendizaje de este proyecto. Re
 ### DOM
 
 - [x] Uso de selectores del DOM.
-- [x] Manejo de eventos del DOM.
+- [ ] Manejo de eventos del DOM.
 - [ ] Manipulación dinámica del DOM.
 
 ### Javascript
