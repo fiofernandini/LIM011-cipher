@@ -1,7 +1,7 @@
 window.cipher = {
   encode: (string, offset) => {
     // SE CREA UNA VARIABLE VACIA
-    let mensajecifrado = '';
+    let mensajeCifrado = '';
     // CON FOR HACEMOS UN RECORRIDO POR TODO EL STRING
     for (let i = 0; i < string.length; i += 1) {
       // CONDICION PARA EL CIFRADO DE MAYUSCULAS
@@ -9,19 +9,19 @@ window.cipher = {
       // SE APLICA LA FORMULA PARA OBTENER EL NUEVO ASCII
         const ascii = (string.charCodeAt(i) - 65 + offset) % 26 + 65;
         // EN LA VARIABLE VACIA SE INSERTA EL NUEVO ASCII CONVERTIDO A LETRA
-        mensajecifrado += String.fromCharCode(ascii);
+        mensajeCifrado += String.fromCharCode(ascii);
         // CONDICION PARA EL CIFRADO DE MINUSCULAS
       } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
       // SE APLICA FORMULA PARA OBTENER EL NUEVO ASCII
         const ascii = (string.charCodeAt(i) - 97 + offset) % 26 + 97;
         // SE INSERTA EN LA VARIABLE VACIA EL NUEVO ASCII CONVERTIDO A LETRA
-        mensajecifrado += String.fromCharCode(ascii);
+        mensajeCifrado += String.fromCharCode(ascii);
         // LOS DEMAS CARACTERES SALDRAN IGUAL SIN CIFRADO
       } else {
-        mensajecifrado += string[i];
+        mensajeCifrado += string[i];
       }
     }
-    return mensajecifrado;
+    return mensajeCifrado;
   },
 
   decode: (string, offset) => {
