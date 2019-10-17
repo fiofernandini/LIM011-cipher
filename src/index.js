@@ -1,55 +1,55 @@
 /* eslint-disable radix */
-document.getElementById('segundaPantalla').classList.add('ocultar');
-document.getElementById('pantallacifrar').classList.add('ocultar');
+document.querySelector('#pantalla-cifra-descifrar').classList.add('ocultar');
+document.querySelector('#pantallacifrar').classList.add('ocultar');
 
-document.getElementById('botonIngresar').addEventListener('click', () => {
-  const usuarito = document.getElementById('user').value;
-  const contraseñita = document.getElementById('contra').value;
-  if (contraseñita === 'COMADRES' && usuarito === '') {
-    document.getElementById('emergente').innerHTML = 'Debes ingresar tu usuario';
-  } else if (contraseñita === 'COMADRES') {
-    document.getElementById('emergente').innerHTML = '<br>';
-    document.getElementById('cabecera').style.display = 'none';
-    document.getElementById('pantalla1').style.display = 'none';
-    document.getElementById('derechos').style.display = 'none';
-    document.getElementById('segundaPantalla').style.display = 'block';
-    document.getElementById('pantallacifrar').style.display = 'block';
-    document.getElementById('formulario').reset();
-  } else if (usuarito === '') {
-    document.getElementById('emergente').innerHTML = 'Debes ingresar tu usuario';
-  } else if (contraseñita === '') {
-    document.getElementById('emergente').innerHTML = 'Debes ingresar tu contraseña';
+document.querySelector('#boton-Ingresar').addEventListener('click', () => {
+  const nombreDeUsuario = document.querySelector('#nombre-de-usuario').value;
+  const contraseñaDeUsuario = document.querySelector('#contraseña-de-usuario').value;
+  if (contraseñaDeUsuario === 'COMADRES' && nombreDeUsuario === '') {
+    document.querySelector('#emergente').innerHTML = 'Debes ingresar tu usuario';
+  } else if (contraseñaDeUsuario === 'COMADRES') {
+    document.querySelector('#emergente').innerHTML = '<br>';
+    document.querySelector('#cabecera').style.display = 'none';
+    document.querySelector('#pantalla-login').style.display = 'none';
+    document.querySelector('#derechos-reservados').style.display = 'none';
+    document.querySelector('#pantalla-cifra-descifrar').style.display = 'block';
+    document.querySelector('#pantallacifrar').style.display = 'block';
+    document.querySelector('#formulario').reset();
+  } else if (nombreDeUsuario === '') {
+    document.querySelector('#emergente').innerHTML = 'Debes ingresar tu usuario';
+  } else if (contraseñaDeUsuario === '') {
+    document.querySelector('#emergente').innerHTML = 'Debes ingresar tu contraseña';
   } else {
-    document.getElementById('emergente').innerHTML = 'Contraseña incorrecta';
+    document.querySelector('#emergente').innerHTML = 'Contraseña incorrecta';
   }
 });
 
 // CERRAR SESION
-document.getElementById('salir').addEventListener('click', () => {
-  document.getElementById('cabecera').style.display = 'block';
-  document.getElementById('pantalla1').style.display = 'block';
-  document.getElementById('derechos').style.display = 'block';
-  document.getElementById('segundaPantalla').style.display = 'none';
-  document.getElementById('pantallacifrar').style.display = 'none';
-  document.getElementById('ingresando').reset();
+document.querySelector('#boton-salir').addEventListener('click', () => {
+  document.querySelector('#cabecera').style.display = 'block';
+  document.querySelector('#pantalla-login').style.display = 'block';
+  document.querySelector('#derechos-reservados').style.display = 'block';
+  document.querySelector('#pantalla-cifra-descifrar').style.display = 'none';
+  document.querySelector('#pantallacifrar').style.display = 'none';
+  document.querySelector('#inicio-de-sesion').reset();
 });
 
 // VARIABLES
 
-const mensaje = document.getElementById('mensajito');
-const desplaza = document.getElementById('desplaza');
-const resultado = document.getElementById('resultado');
+const mensaje = document.querySelector('#mensaje-a-cifrar-o-descifrar');
+const numeroDesplazamientos = document.querySelector('#numero-de-desplazamientos');
+const resultados = document.querySelector('#resultado-del-cifrar-descifrar');
 
 // CIFRAR
-document.getElementById('boton1').addEventListener('click', () => {
+document.querySelector('#boton-cifrado').addEventListener('click', () => {
   const string = mensaje.value;
-  const offset = parseInt(desplaza.value);
-  resultado.value = window.cipher.encode(string, offset);
+  const offset = parseInt(numeroDesplazamientos.value);
+  resultados.value = window.cipher.encode(string, offset);
 });
 
 // DESCIFRAR
-document.getElementById('boton2').addEventListener('click', () => {
+document.querySelector('#boton-descifrado').addEventListener('click', () => {
   const string = mensaje.value;
-  const offset = parseInt(desplaza.value);
-  resultado.value = window.cipher.decode(string, offset);
+  const offset = parseInt(numeroDesplazamientos.value);
+  resultados.value = window.cipher.decode(string, offset);
 });

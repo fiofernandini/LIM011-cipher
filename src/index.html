@@ -24,37 +24,37 @@
 
 <main>
 <!-- INICIO DE SESION-->
-<div id="pantalla1">
+<div id="pantalla-login">
     <p class="informacion">En Ecuador cada vez son más las mujeres criminalizadas y con restricciones para acceder a un aborto seguro.
     Nuestro trabajo permite que la práctica del aborto salga de la clandestinidad y se muestre como cotidiana.</p>
-    <form class="ingresa" id="ingresando">
-        <label class="letra"> Usuario <input id="user" class="sesion1" required type="text" placeholder="Username"> </label> <br>
+    <form class="ingresa" id="inicio-de-sesion">
+        <label class="letra"> Usuario <input id="nombre-de-usuario" class="sesion1" required type="text" placeholder="Username"> </label> <br>
         <br>
-        <label class="letra">Contraseña <input id="contra" class="sesion2" required type="password" placeholder="Password"></label> <br>
+        <label class="letra">Contraseña <input id="contraseña-de-usuario" class="sesion2" required type="password" placeholder="Password"></label> <br>
         <p id="emergente" class="emerge"><br></p>
     </form>
-    <input id="botonIngresar" class="ingreso" type="submit" value="Ingresar">
+    <input id="boton-Ingresar" class="ingreso" type="submit" value="Ingresar">
 </div>
 
 <!-- PANTALLA DE CIFRADO Y DESCIFRADO-->
-<div id="segundaPantalla">  
+<div id="pantalla-cifra-descifrar">  
     <img class="loguito" src="com.png">
     <p class="subtitulo1">Sistema de protección de datos</p>
 </div>
 
 <div  class="pantallacifra" id="pantallacifrar">
     <form id="formulario">
-        <p  class="desplazamiento"> Desplazamientos: <input class="numerito" id="desplaza" type="number" min="1"> </p>
-        <textarea id="mensajito" class="t1"  cols="80" rows="5" placeholder="Escribe tu mensaje"></textarea> <br>
-        <button id="boton1" class="b1" type="button"> Cifrar </button>
-        <button id="boton2" class="b2" type="button">  Descifrar </button> <br>
-        <textarea class="t2"  id="resultado" cols="80" rows="5" disabled></textarea> <br>
-        <button id="borrar" class="b3" type="reset"> Reset </button>
+        <p  class="desplazamiento"> Desplazamientos: <input class="numerito" id="numero-de-desplazamientos" type="number" min="1"> </p>
+        <textarea id="mensaje-a-cifrar-o-descifrar" class="t1"  cols="80" rows="5" placeholder="Escribe tu mensaje"></textarea> <br>
+        <button id="boton-cifrado" class="b1" type="button"> Cifrar </button>
+        <button id="boton-descifrado" class="b2" type="button">  Descifrar </button> <br>
+        <textarea class="t2"  id="resultado-del-cifrar-descifrar" cols="80" rows="5" disabled></textarea> <br>
+        <button id="boton-borrar" class="b3" type="reset"> Reset </button>
     </form>
-    <button id="salir" class="b4" type="button" > Salir </button> 
+    <button id="boton-salir" class="b4" type="button" > Salir </button> 
 </div>
 </main>
-     <footer id="derechos">Fiorella Fernandini © Derechos reservados</footer>
+     <footer id="derechos-reservados">Fiorella Fernandini © Derechos reservados</footer>
 
  <!--LINKEO DE LOS ARCHIVOS JS-->
     <script src="cipher.js"></script>
